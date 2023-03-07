@@ -8,9 +8,7 @@
 
 function is_leap() {
 #read -p "enter a year " year
-if [ $1 -lt 0 ] ||! [[ $1 =~ ^[0-9]+$ ]]; then
-        echo "enter a valid year"
-elif (( $1 % 4 != 0 )); then
+if (( $1 % 4 != 0 )); then
         echo "it's a common year"
 elif (( $1 % 100 != 0 )); then
         echo "it's a leap year"
