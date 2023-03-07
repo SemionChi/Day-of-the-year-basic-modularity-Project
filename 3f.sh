@@ -4,7 +4,7 @@
 #if the year number isn't divisible by four, it's a common year;
 #  otherwise, if the year number isn't divisible by 100, it's a leap year;
 #  otherwise, if the year number isn't divisible by 400, it's a common year;
-# Otherwise, it's a leap year.
+#  otherwise, it's a leap year.
 
 function is_leap() {
 #read -p "enter a year " year
