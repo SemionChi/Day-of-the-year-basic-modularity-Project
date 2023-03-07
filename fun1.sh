@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p "Enter year, month, day values: " input
+#read -p "Enter year, month, day values: " input
 
 # Split the input into individual words using the IFS variable
 IFS=' ' read -ra args <<< "$input"
@@ -7,9 +7,9 @@ IFS=' ' read -ra args <<< "$input"
 
 
 function get_days_num {
-  year=${args[0]}
-month=${args[1]}
-day=${args[2]}
+  year=$1
+month=$2
+day=$3
 
   if [[ $year -lt 1 || $month -lt 1 || $month -gt 12 || $day -lt 1 ]]; then
     echo "None"
