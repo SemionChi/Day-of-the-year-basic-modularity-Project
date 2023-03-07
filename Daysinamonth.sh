@@ -10,8 +10,8 @@ echo "29"
 else echo "28" 
 fi 
 ;; 
-4|6|9|11) return 30 ;; 
-1|3|5|7|8|12) return 31 ;; 
+4|6|9|11) echo 30 ;; 
+1|3|5|7|8|12) echo 31 ;; 
 esac
 }
 check_months_daysum $2 $1
