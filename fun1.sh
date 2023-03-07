@@ -50,6 +50,6 @@ function is_leap_year {
   fi
 }
 
-
+#output
 get_days_num $year $month $day
 
