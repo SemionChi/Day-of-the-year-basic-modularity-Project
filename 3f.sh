@@ -11,13 +11,13 @@ function is_leap() {
 if [ $1 -lt 0 ] ||! [[ $1 =~ ^[0-9]+$ ]]; then
         echo "enter a valid year"
 elif (( $1 % 4 != 0 )); then
-        echo "it's a common year"
+        echo "common year"
 elif (( $1 % 100 != 0 )); then
-        echo "it's a leap year"
+        echo "leap year"
 elif (( $1 % 400 != 0 )); then
-        echo "it's a common year"
+        echo "common year"
 else
-        echo "It's a leap year"
+        echo "leap year"
 fi
 }
 is_leap $1
