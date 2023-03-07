@@ -1,0 +1,13 @@
+mkdir Bash
+cd Bash
+git init
+nano Daysinamonth
+git status
+git add .
+git commit -m "This is my Function"
+
+git remote add origin git@github.com:SemionChi/Day-of-the-year-basic-modularity-Project.git
+git pull
+git checkout main
+git push origin main
+git push
